@@ -1,7 +1,7 @@
 node ('slave_aws') {
     stage('Clonacion Repositorio') {
         git branch: 'master',
-            credentialsId: 'test',
+            credentialsId: 'Jenkins',
             url: 'git@github.com:UserSoniMejias/HelloWorldCI.git'
 
         sh "ls -lat"
